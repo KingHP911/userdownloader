@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://${db_url}/userdownloader
+    username: ${db_user}
+    password: ${db_password}
+    driver-class: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+      show_sql: true
+
+server:
+  error:
+    include-message: always
+
+resourceUrl: https://randomuser.me/api/
